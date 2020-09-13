@@ -1,5 +1,9 @@
 ##  Cross-Sell-Prediction
 
+AV Leaderboard Rank : 101 
+
+AV Score : 0.85
+
 ## Problem Statement 
 
 Your client is an Insurance company that has provided Health Insurance to its customers now they need your help in building a model to predict whether the policyholders (customers) from past year will also be interested in Vehicle Insurance provided by the company.
@@ -14,46 +18,18 @@ Building a model to predict whether a customer would be interested in Vehicle In
 
 Now, in order to predict, whether the customer would be interested in Vehicle insurance, you have information about demographics (gender, age, region code type), Vehicles (Vehicle Age, Damage), Policy (Premium, sourcing channel) etc.
 
-Data Description
-
-train.csv
-Variable	Definition
-id	Unique ID for the customer
-Gender	Gender of the customer
-Age
-Age of the customer
-Driving_License	0 : Customer does not have DL, 1 : Customer already has DL
-Region_Code	Unique code for the region of the customer
-Previously_Insured	1 : Customer already has Vehicle Insurance, 0 : Customer doesn't have Vehicle Insurance
-Vehicle_Age	Age of the Vehicle 
-Vehicle_Damage
-1 : Customer got his/her vehicle damaged in the past.
-0 : Customer didn't get his/her vehicle damaged in the past.
-Annual_Premium	The amount customer needs to pay as premium in the year
-Policy_Sales_Channel	Anonymised Code for the channel of outreaching to the customer ie. Different Agents, Over Mail, Over Phone, In Person, etc.
-Vintage	Number of Days, Customer has been associated with the company
-Response	1 :  Customer is interested, 0 : Customer is not interested
+## Evaluation Metric
+The evaluation metric for this hackathon is ROC_AUC score.
 
 
-test.csv
-Variable	Definition
-id	Unique ID for the customer
-Gender	Gender of the customer
-Age
-Age of the customer
-Driving_License	0 : Customer does not have DL, 1 : Customer already has DL
-Region_Code	Unique code for the region of the customer
-Previously_Insured	1 : Customer already has Vehicle Insurance, 0 : Customer doesn't have Vehicle Insurance
-Vehicle_Age	Age of the Vehicle 
-Vehicle_Damage
-1 : Customer got his/her vehicle damaged in the past.
-0 : Customer didn't get his/her vehicle damaged in the past.
-Annual_Premium	The amount customer needs to pay as premium in the year
-Policy_Sales_Channel	Anonymised Code for the channel of outreaching to the customer ie. Different Agents, Over Mail, Over Phone, In Person, etc.
-Vintage	Number of Days, Customer has been associated with the company
 
+## Public and Private split
+The public leaderboard is based on 40% of test data, while final rank would be decided on remaining 60% of test data (which is private leaderboard)
 
-sample_submission.csv
-Variable	Definition
-id	Unique ID
-Response	Probability of Customer being interested in Vehicle Loan
+ 
+
+## Guidelines for Final Submission
+Please ensure that your final submission includes the following:
+
+Solution file containing the predicted response of the customer (Probability of response 1)
+Code file for reproducing the submission, note that it is mandatory to submit your code for a valid final submission
